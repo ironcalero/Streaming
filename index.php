@@ -3,12 +3,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>SERVIDOR STREAMING</title>
+        <title>SERVIDOR</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>SERVIDOR STREAMING</h1>
-        <div id="mishuevos">
+        <div id="chat">
             <form id="comment-form">
                 <input type="text" name="name" placeholder="Nombre"><br>
                 <textarea name="comment" placeholder="Comentario"></textarea><br>
@@ -21,9 +21,11 @@
             <script src="live-comments.js"></script>
         </div>
 
-        <div id="video">
-            <iframe width="1280" height="720" src="https://rtsp.me/embed/bRhQ5zZn/" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <pre>
+            <div class="video">
+                <iframe src="https://rtsp.me/embed/bRhQ5zZn/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+        </pre>
 
     </body>
 </html>
