@@ -10,7 +10,12 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-$name = $_POST['name'];
+session_start();
+if(isset($_SESSION['username'])) {
+    $name = $_SESSION['username'];
+}
+
+/* $name = $usuario['username']; */
 $comment = $_POST['comment'];
 
 $sql = "INSERT INTO comments (name, comentario, hora) VALUES ('$name', '$comment', NOW())";

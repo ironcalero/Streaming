@@ -26,6 +26,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             echo "Inicio de sesión exitoso";
             session_start();
             $_SESSION['id']=$row['id'];
+            $_SESSION['username']=$row['username'];
+            header("Location: index.php");
         } else {
             echo "Nombre de usuario o contraseña incorrectos.";
         }

@@ -15,7 +15,7 @@
             <script src="live-comments.js"></script>
 
             <form id="comment-form">
-                <input type="text" name="name" placeholder="Nombre"><br>
+                <!-- <input type="text" name="name" placeholder="Nombre"><br> -->
                 <textarea name="comment" placeholder="Comentario"></textarea><br>
                 <input type="submit" value="Enviar comentario">
             </form>
