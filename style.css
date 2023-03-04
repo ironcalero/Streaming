@@ -7,20 +7,25 @@ h1 {
     text-align: center;
 }
 
-input, textarea{
+/* input, textarea{
+    width: 300px;
+    min-height: 50px;
+} */
+
+#chat {
+    background-color: #fff;
+    border: 1px solid #000;
+    float: right;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
     width: 300px;
     min-height: 50px;
 }
 
-#chat {
-    float: right;
-    margin-right: 100px;
-    font-size: 1.9em;
-}
-
 .video {
     position: relative;
-    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-bottom: 42%; /* 16/9 ratio */
     padding-top: 30px; /* IE6 workaround*/
     height: 0;
     overflow: hidden;
