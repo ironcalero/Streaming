@@ -12,11 +12,12 @@ if ($conn->connect_error) {
 
 $sql = "SELECT * FROM comments ORDER BY hora DESC LIMIT 20";
 $result = $conn->query($sql);
-
+$tcom="";
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<p><strong>" . $row["name"] . ":</strong> " . $row["comentario"] . "</p>";
+        $tcom= "<p><strong>" . $row["name"] . ":</strong> " . $row["comentario"] . "</p>".$tcom;
     }
+    echo $tcom;
 } else {
     echo "No hay comentarios aún";
 }

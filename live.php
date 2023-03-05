@@ -16,7 +16,7 @@
 
             <form id="comment-form">
                 <!-- <input type="text" name="name" placeholder="Nombre"><br> -->
-                <textarea name="comment" placeholder="Comentario"></textarea><br>
+                <textarea name="comment" placeholder="Comentario" required></textarea><br>
                 <input type="submit" value="Enviar comentario">
             </form>
         </div>
