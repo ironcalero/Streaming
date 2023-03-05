@@ -32,7 +32,7 @@ if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["pass
 
             if ($conn->query($sql) === TRUE) {
                 echo "Usuario registrado exitosamente";
-                $boton = "<form action=\"realindex.html\" method=\"POST\">"
+                $boton = "<form action=\"index.html\" method=\"POST\">"
                             ."<input type=\"submit\" value=\"Inicio\">"
                         ."</form>";
                 echo $boton;
@@ -41,7 +41,7 @@ if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["pass
             }
         } else {
             echo "Comprueba que has escrito la misma contraseña las dos veces.";
-            $boton = "<form action=\"realindex.html\" method=\"POST\">"
+            $boton = "<form action=\"index.html\" method=\"POST\">"
                         ."<input type=\"submit\" value=\"Inicio\">"
                     ."</form>";
             echo $boton;

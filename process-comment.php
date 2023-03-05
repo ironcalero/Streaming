@@ -18,11 +18,11 @@ if(isset($_SESSION['username'])) {
 /* $name = $usuario['username']; */
 $comment = $_POST['comment'];
 
-$sql = "INSERT INTO comments (name, comentario, hora) VALUES ('$name', '$comment', NOW())";
+$sql = "INSERT INTO comments (name, comentario, hora) VALUES ('$name', '$comment', NOW()+0)";
 
 if ($conn->query($sql) === TRUE) {
     echo "Comentario enviado correctamente";
-    header('Location: ./index.php');
+    header('Location: ./live.php');
 } else {
     echo "Error al enviar comentario: " . $conn->error;
 }

@@ -27,11 +27,19 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             session_start();
             $_SESSION['id']=$row['id'];
             $_SESSION['username']=$row['username'];
-            header("Location: index.php");
+            header("Location: live.php");
         } else {
             echo "Nombre de usuario o contraseña incorrectos.";
+            $boton = "<form action=\"index.html\" method=\"POST\">"
+                        ."<input type=\"submit\" value=\"Inicio\">"
+                    ."</form>";
+            echo $boton;
         }
     } else {
         echo "Nombre o contraseña incorectos.";
+        $boton = "<form action=\"index.html\" method=\"POST\">"
+                    ."<input type=\"submit\" value=\"Inicio\">"
+                ."</form>";
+        echo $boton;
     }
 }
